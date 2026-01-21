@@ -1,16 +1,10 @@
--- You can add your own plugins here or in other files in this directory!
---  I promise not to create any merge conflicts in this directory :)
---
--- See the kickstart.nvim README for more information
---
-
 -- lua/kickstart/plugins/transparent.lua
 
 return {
-  'xiyaowong/transparent.nvim',
+  "xiyaowong/transparent.nvim",
   lazy = false, -- load at startup
   config = function()
-    require('transparent').setup {
+    require("transparent").setup {
       groups = {
         'Normal',
         'NormalNC',
@@ -43,3 +37,4 @@ return {
     }
   end,
 }
+
