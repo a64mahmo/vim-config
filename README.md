@@ -90,7 +90,7 @@ vim.g.have_nerd_font = true
 | Key | Action |
 |-----|--------|
 | `\` | Toggle file tree (neo-tree) |
-| `<leader>pv` | Open netrw file explorer |
+| `<leader><Esc>` | Open netrw file explorer |
 | `<leader>sf` | Search files |
 | `<leader>sg` | Live grep |
 | `<leader>sh` | Search help |
