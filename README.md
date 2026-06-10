@@ -16,7 +16,7 @@ lua/
     telescope.lua         # Fuzzy finder + keymaps
     lsp.lua               # LSP (nvim-lspconfig + mason + lazydev)
     completion.lua        # Autocompletion (blink.cmp + luasnip)
-    treesitter.lua        # Syntax highlighting
+    treesitter.lua        # Syntax highlighting + text objects
     formatting.lua        # Auto-format on save (conform.nvim)
     mini.lua              # mini.ai, mini.surround, mini.statusline
     which-key.lua         # Keymap hints popup
@@ -28,6 +28,10 @@ lua/
     transparent.lua       # Transparent background
     todo-comments.lua     # Highlight TODO/FIXME comments
     guess-indent.lua      # Auto-detect indentation
+    bufferline.lua        # Tab bar for buffer switching
+    harpoon.lua           # Quick file navigation (harpoon2)
+    markdown.lua          # Inline markdown rendering
+    multicursor.lua       # VS Code-like multi-cursor (vim-visual-multi)
 ```
 
 ## Customization
@@ -91,6 +95,9 @@ vim.g.have_nerd_font = true
 |-----|--------|
 | `\` | Toggle file tree (neo-tree) |
 | `<leader><Esc>` | Open netrw file explorer |
+| `<Tab>` / `<S-Tab>` | Next/previous buffer |
+| `<leader>x` | Close current buffer |
+| `<C-a>` | Select all |
 | `<leader>sf` | Search files |
 | `<leader>sg` | Live grep |
 | `<leader>sh` | Search help |
@@ -106,6 +113,17 @@ vim.g.have_nerd_font = true
 | `]c` / `[c` | Next/prev git hunk |
 | `<leader>hs` | Stage hunk |
 | `<leader>hb` | Git blame line |
+| `<leader>a` | Harpoon: add file |
+| `<C-e>` | Harpoon: toggle menu |
+| `<C-h/j/k/l>` | Harpoon: select files 1-4 |
+| `<C-n>` | Multi-cursor: add next match |
+| `<C-Down>` / `<C-Up>` | Multi-cursor: add below/above |
+| `<leader>ma` | Multi-cursor: select all matches |
+| `<leader>mr` | Multi-cursor: regex search |
+| `vaf` / `vif` | Select around/inside function |
+| `vac` / `vic` | Select around/inside class |
+| `vaa` / `via` | Select around/inside parameter |
+| `]f` / `[f` | Next/previous function |
 
 ## Plugin Management
 
