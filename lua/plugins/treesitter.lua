@@ -7,6 +7,21 @@ return {
   },
   config = function()
     require('nvim-treesitter').setup({
+      auto_install = true,
+      ensure_installed = {
+        'c',
+        'c_sharp',
+        'css',
+        'html',
+        'javascript',
+        'lua',
+        'markdown',
+        'markdown_inline',
+        'query',
+        'razor',
+        'vim',
+        'vimdoc',
+      },
       install_dir = vim.fn.stdpath('data') .. '/site',
       textobjects = {
         select = {

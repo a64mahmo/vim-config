@@ -6,7 +6,6 @@ return {
 
     -- Add linters per filetype here
     lint.linters_by_ft = {
-      markdown = { 'markdownlint' },
     }
 
     vim.api.nvim_create_autocmd({ 'BufEnter', 'BufWritePost', 'InsertLeave' }, {
