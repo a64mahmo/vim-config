@@ -1,45 +1,8 @@
 -- You can add your own plugins here or in other files in this directory!
---  I promise not to create any merge conflicts in this directory :)
+--
+-- Note: init.lua only imports `lua/plugins/`, so nothing here loads until you
+-- add `{ import = 'custom.plugins' }` to the lazy.setup call.
 --
 -- See the kickstart.nvim README for more information
---
 
--- lua/kickstart/plugins/transparent.lua
-
-return {
-  'xiyaowong/transparent.nvim',
-  lazy = false, -- load at startup
-  config = function()
-    require('transparent').setup {
-      groups = {
-        'Normal',
-        'NormalNC',
-        'Comment',
-        'Constant',
-        'Special',
-        'Identifier',
-        'Statement',
-        'PreProc',
-        'Type',
-        'Underlined',
-        'Todo',
-        'String',
-        'Function',
-        'Conditional',
-        'Repeat',
-        'Operator',
-        'Structure',
-        'LineNr',
-        'NonText',
-        'SignColumn',
-        'CursorLine',
-        'CursorLineNr',
-        'StatusLine',
-        'StatusLineNC',
-        'EndOfBuffer',
-      },
-      extra_groups = {},
-      exclude_groups = {},
-    }
-  end,
-}
+return {}

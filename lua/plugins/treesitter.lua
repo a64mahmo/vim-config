@@ -9,6 +9,8 @@ return {
     require('nvim-treesitter').setup({
       auto_install = true,
       ensure_installed = {
+        'bash', -- noice uses these two to highlight the cmdline
+        'regex',
         'c',
         'c_sharp',
         'css',

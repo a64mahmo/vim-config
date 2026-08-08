@@ -24,6 +24,9 @@ vim.o.splitbelow = true
 vim.o.list = true
 vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 
+-- Rounded borders on every floating window (LSP hover, lazy, mason, ...)
+vim.o.winborder = 'rounded'
+
 vim.o.inccommand = 'split'
 vim.o.cursorline = true
 vim.o.scrolloff = 10
